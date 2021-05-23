@@ -1,0 +1,299 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport content="width=device-width, initial-scale1.0">
+<title>HTML QUIZ</TITLE>
+</head>
+<style>
+*{
+margin:0;
+padding:0;
+
+box-sizing:border-box;
+font-weight:300;
+}
+
+html{
+font=size:62.5%;
+}
+.main-div{
+width:relative;
+height:100%;
+display:grid;
+place-items: center;
+background-color:#81ecec;
+}
+#heading
+{
+    width:RELATIVE;
+	height:RELATIVE;
+	background-color:#ffeaa7;
+	position:relative;
+	background-color:#dfe9e9;
+    margin-top:3rem;
+    padding: 3rem 4rem;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+}
+
+#main-div{
+width:relative;
+height:related;
+display:grid;
+place-items: center;
+background-color:#81ecec;
+}
+
+.inner-div{
+width:relative;
+background-color:#dfe6e9;
+padding:0.5rem 4rem;
+border-radius:2rem;
+box-shadow:0 1rem  #d63031;
+
+}
+.inner-div h2{
+font-size: 2rem;
+font-weight:400;
+margin:1rem 0 2rem 0;
+}
+.inner-div li 
+{
+font-size: 1.5rem;
+margin-top:1rem;
+list-style:none;
+}
+input  {
+   cursor:pointer;
+   }
+ 
+#submit, .btn {
+padding:1rem 3rem;
+outline:none;
+font-size:1rem;
+display:block;
+margin:auto;
+border:none;
+text-transform:uppercase;
+color:white;
+background-color:#74b9ff;
+margin-top:4rem;
+ cursor:pointer;
+}
+#submit:hover {
+background-color:#0984e3;
+}
+#showScore{
+background-color:#dfe9e9;
+margin-top:2rem;
+padding: 3rem 4rem;
+box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+}
+
+#showScore h3{
+ font-size:2rem;
+ text-align:center;
+ 
+}
+
+#showScore .btn:hover {
+cursor:pointer;
+background-color:#00b894;
+color:#fff;
+}
+
+#showScore .btn{
+margin-top:2rem;
+background-color:#55efc4;
+color:#2d3436;
+}
+
+.scoreArea
+{
+display:none;
+}
+#designed1
+{
+	width:RELATIVE;
+	height:RELATIVE;
+	background-color:#dfe9e9;
+    margin-top:3rem;
+    padding: 3rem 4rem;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+}
+
+
+#designed
+{
+	width:RELATIVE;
+	height:RELATIVE;
+	background-color:#dfe9e9;
+    margin-top:3rem;
+    padding: 3rem 4rem;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+}
+
+#effect
+{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color:blue;
+      }
+      p {
+        position: relative;
+       
+        font-size: 20px;
+        letter-spacing: 1px;
+        background: linear-gradient(95deg, #ff2A00, #fff, #255);
+        background-repeat: repeat;
+        background-size: 80%;
+        animation: animate 12s infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0);
+      }
+      @keyframes animate {
+        0% {
+          background-position: -500%;
+        }
+        50% {
+          background-position: 500%;
+        }
+      }
+
+
+
+.shimmer {
+  font-family: "Lato";
+  font-weight: 100;
+  font-size: 1REM;
+  margin: 0 auto;
+  padding: 20px;
+  display: inline;
+  margin-bottom: 0;
+}
+.shimmer {
+  text-align: center;
+  color: rgba(255,255,255,0.1);
+  background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #222;
+}
+@-moz-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-o-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+
+
+
+.glow {
+  font-size: 45px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+</style>
+
+<body>
+     <div class="main-div">
+	    
+		<h1 class="glow">HTML CONTEST BY AMAN KUMAR</h1>
+		20 Questions provided
+		
+	      <div class="inner-div">
+		     <h2 class="question">Question Comes Here</h2>
+		<ul>
+			 <li>
+			      <input type="radio" name="answer" id="ans1" class="answer">
+			       <label for="ans1" id=option1> Answer Option</label>
+			 </li>
+			 
+			  <li>
+			      <input type="radio" name="answer" id="ans2" class="answer">
+			       <label for="ans2" id=option2> Answer Option</label>
+			 </li>
+			 
+			  <li>
+			      <input type="radio" name="answer" id="ans3" class="answer">
+			       <label for="ans3" id=option3> Answer Option</label>
+			 </li>
+			 
+			  <li>
+			      <input type="radio" name="answer" id="ans4" class="answer">
+			       <label for="ans4" id=option4> Answer Option</label>
+			 </li>
+		</ul>
+		<button id="submit">submit</button>
+		<div id="showScore" class="scoreArea"></div>
+	   </div>
+	             <CENTER><h2 class="shimmer">DESIGNED AND DEVELOPED BY:- AMAN KUMAR RN COLLEGE BCA ROLL-70</BR></h2></CENTER>
+       </div>
+	   
+	   
+	   <script src ="script.js"></script>
+	   
+	  
+	          
+</body>
+</html>		 
