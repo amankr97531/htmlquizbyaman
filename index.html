@@ -133,106 +133,6 @@ display:none;
     box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
 }
 
-#effect
-{
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color:blue;
-      }
-      p {
-        position: relative;
-       
-        font-size: 20px;
-        letter-spacing: 1px;
-        background: linear-gradient(95deg, #ff2A00, #fff, #255);
-        background-repeat: repeat;
-        background-size: 80%;
-        animation: animate 12s infinite;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: rgba(255, 255, 255, 0);
-      }
-      @keyframes animate {
-        0% {
-          background-position: -500%;
-        }
-        50% {
-          background-position: 500%;
-        }
-      }
-
-
-
-.shimmer {
-  font-family: "Lato";
-  font-weight: 100;
-  font-size:  2REM;
-  margin: 0 auto;
-  padding: 20px;
-  display: inline;
-  margin-bottom: 0;
-}
-.shimmer {
-  text-align: center;
-  color:#6c5ce7;
-  background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
-  background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
-  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
-  -webkit-background-size: 125px 100%;
-  -moz-background-size: 125px 100%;
-  background-size: 125px 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-animation-name: shimmer;
-  -moz-animation-name: shimmer;
-  animation-name: shimmer;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-color: #222;
-}
-@-moz-keyframes shimmer {
-  0% {
-    background-position: top left;
-  }
-  100% {
-    background-position: top right;
-  }
-}
-@-webkit-keyframes shimmer {
-  0% {
-    background-position: top left;
-  }
-  100% {
-    background-position: top right;
-  }
-}
-@-o-keyframes shimmer {
-  0% {
-    background-position: top left;
-  }
-  100% {
-    background-position: top right;
-  }
-}
-@keyframes shimmer {
-  0% {
-    background-position: top left;
-  }
-  100% {
-    background-position: top right;
-  }
-}
-
 
 
 
@@ -272,7 +172,13 @@ display:none;
 
 
 </style>
-
+<script>
+	      window.oncontextmenu=function ()
+		  {
+		  console.log("Right click Disabled");
+		  return false;
+		  }
+	</script>
 <body bgcolor="#81ecec">
      <div class="main-div">
 	    </br>
