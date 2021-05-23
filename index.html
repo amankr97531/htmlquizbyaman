@@ -36,7 +36,7 @@ background-color:#81ecec;
 
 #main{
 width:relative;
-height:80%;
+height:90%;
 display:grid;
 place-items: center;
 background-color:#81ecec;
@@ -236,8 +236,25 @@ display:none;
 
 
 .glow {
-  font-size: 45px;
+  font-size: 50px;
   color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.glow1 {
+  font-size: 35px;
+  color:#2d3436;
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
 }
@@ -259,7 +276,7 @@ display:none;
      <div class="main-div">
 	    </br>
 		<h1 class="glow">HTML CONTEST BY AMAN KUMAR</h1>
-		<center></br>20 Questions provided</center></br></br>
+		<center></br><h2>20 Questions provided</h2></center></br></br></br></br></br>
 		<div id="main">
 	      <div class="inner-div">
 		     <h2 class="question">Question Comes Here</h2>
@@ -287,7 +304,7 @@ display:none;
 		<button id="submit">submit</button>
 		<div id="showScore" class="scoreArea"></div>
 	   </div>
-	             <CENTER><h2 class="glow">DESIGNED AND DEVELOPED BY:- AMAN KUMAR RN COLLEGE BCA ROLL-70</BR></h2></CENTER>
+	             <CENTER></br><h2 class="glow1">DESIGNED AND DEVELOPED BY:- AMAN KUMAR </br>RN COLLEGE BCA ROLL-70</h2></CENTER>
 				 </div>
        </div>
 	   
